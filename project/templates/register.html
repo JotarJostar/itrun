@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/register.css')}}" rel="stylesheet" />
+</head>
+<body>
+    
+    <form>
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <label for="confirmPassword">Подтвердите пароль:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      
+        <input type="submit" value="Зарегистрироваться">
+      </form>
+      
+</body> 
+</html> 
